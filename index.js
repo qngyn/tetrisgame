@@ -39,7 +39,7 @@ const startGame = () => {
   timer.start = performance.now();
   board.resetBoard();
   board.drawGame();
-  console.log(board.curTetrisBlock.shape);
+  user.resetUserScoreData();
   animate();
 };
 
@@ -64,17 +64,6 @@ const animate = async (now = 0) => {
     //   return;
     // }
   }
-  // setTimeout(function () {
-  //   //your code to be executed after 1 second
-  //   curContext.clearRect(
-  //     0,
-  //     0,
-  //     curContext.canvas.width,
-  //     curContext.canvas.height
-  //   );
-  //   board.drawGame();
-  //   requestId = requestAnimationFrame(animate);
-  // }, 1000);
   curContext.clearRect(0, 0, curContext.canvas.width, curContext.canvas.height);
   board.drawGame();
   requestId = requestAnimationFrame(animate);

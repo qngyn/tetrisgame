@@ -105,7 +105,8 @@ export default class GameBoard {
       case 'Space Bar':
         // hard drop the block
         return (curTetrisBlock) => {
-          console.log('check curTetrisBlock: ', curTetrisBlock);
+          console.log('check curTetrisBlock: ');
+          console.table(curTetrisBlock.shape);
           let movingTetrisBlock = curTetrisBlock;
           while (this.isValidBlock(movingTetrisBlock)) {
             // update user score
