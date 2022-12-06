@@ -102,8 +102,6 @@ export const GAME_POINTS = {
 };
 Object.freeze(GAME_POINTS);
 
-// export const GAME_POINTS;
-
 export const LEVEL_SPEED = {
   0: 700,
   1: 675,

@@ -73,3 +73,8 @@ p {
 #modal-overlay #modal .modal-footer {
   margin-top: auto;
 }
+
+.modal-header,
+.modal-footer {
+  text-align: center;
+}
