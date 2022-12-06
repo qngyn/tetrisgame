@@ -64,6 +64,30 @@ const animate = async (now = 0) => {
   requestId = requestAnimationFrame(animate);
 };
 
+const pauseGame = () => {
+  if (!requestId) {
+    // resume game
+    pauseButton.innerHTML = 'Pause';
+    animate();
+    return;
+  }
+
+  cancelAnimationFrame(requestId);
+  requestId = null;
+
+  curContext.fillStyle = '#000000b3';
+  curContext.fillRect(0, 0, curContext.canvas.width, curContext.canvas.height);
+  curContext.fillStyle = 'black';
+  curContext.fillRect(1, 2.6, 8.3, 1.4);
+  curContext.font = '1px Audiowide';
+  curContext.fillStyle = '#efcfd4';
+  curContext.fillText('PAUSE GAME', 1.3, 3.7);
+  pauseButton.innerHTML = 'Resume';
+};
+
+const pauseButton = document.getElementById('pause-button');
+pauseButton.addEventListener('click', pauseGame);
+
 document.addEventListener('keydown', (event) => {
   const keyPressed = event.key;
 
