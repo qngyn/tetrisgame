@@ -235,7 +235,7 @@ export default class GameBoard {
     let pointsForFullRows;
     switch (numRows) {
       case 1:
-        pointForFullRows = GAME_POINTS.SINGLE;
+        pointsForFullRows = GAME_POINTS.SINGLE;
         break;
       case 2:
         pointsForFullRows = GAME_POINTS.DOUBLE;

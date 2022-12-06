@@ -109,19 +109,29 @@ export const BLOCK_SHAPES = [
   ],
 ];
 
-export const BLOCK_COLORS = [
-  '#bfd1d0',
-  '#f4d7de',
-  '#f4ceb8',
-  '#ebe1b0',
-  '#e2cdb9',
-  '#a4d4dc',
-  '#c2a2c2',
-  '#f3f3ab',
-  '#d7e5ec',
-  '#9a7b8',
-];
+// export const BLOCK_COLORS = [
+//   '#bfd1d0',
+//   '#f4d7de',
+//   '#f4ceb8',
+//   '#ebe1b0',
+//   '#e2cdb9',
+//   '#a4d4dc',
+//   '#c2a2c2',
+//   '#f3f3ab',
+//   '#d7e5ec',
+//   '#9a7b8',
+// ];
 
+export const BLOCK_COLORS = [
+  'none',
+  'cyan',
+  'blue',
+  'orange',
+  'yellow',
+  'green',
+  'purple',
+  'red',
+];
 // Basic points (reference: https://tetris.wiki/Scoring)
 export const GAME_POINTS = {
   SINGLE: 100,
