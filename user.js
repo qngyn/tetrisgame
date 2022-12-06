@@ -8,15 +8,13 @@ export default class User {
   }
 
   resetUserScoreData = () => {
-    this.score = 0;
-    this.level = 0;
-    this.lines = 0;
+    ['score', 'level', 'lines'].forEach((key) => this.setUserScoreData(key, 0));
   };
 
   setUserScoreData = (key, value) => {
     this[key] = value;
     // show updated data
-    displayScoreData(key);
+    this.displayScoreData(key, value);
   };
 
   updateUserScoreData = (key, deltaValue) => {
