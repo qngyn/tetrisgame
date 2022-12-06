@@ -46,6 +46,8 @@ const startGame = () => {
   board.user.resetUserScoreData();
   hscore && board.user.setUserScoreData('hscore', hscore);
   animate();
+  pauseButton.disabled = false;
+  pauseButton.innerHTML = 'Pause';
 };
 
 const startButton = document.getElementById('start-button');
