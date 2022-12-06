@@ -80,13 +80,6 @@ export default class GameBoard {
           ...curTetrisBlock,
           x: curTetrisBlock.x + 1,
         });
-      // case 'Up': // Applicable to IE, Edge
-      // case 'ArrowUp':
-      //   // move block up
-      //   return (curTetrisBlock) => ({
-      //     ...curTetrisBlock,
-      //     y: curTetrisBlock.y - 1,
-      //   });
       case 'Down': // Applicable to IE, Edge
       case 'ArrowDown':
         // move block down
@@ -218,7 +211,6 @@ export default class GameBoard {
         }
       });
     });
-    // this.drawCurrentGameBoard();
   };
 
   // check if a cell's coordinates is inside the game board's boundary

@@ -39,7 +39,7 @@ const startGame = () => {
   timer.start = performance.now();
   board.resetBoard();
   board.drawGame();
-  user.resetUserScoreData();
+  board.user.resetUserScoreData();
   animate();
 };
 
@@ -58,11 +58,6 @@ const animate = async (now = 0) => {
       currentGameOver();
       return;
     }
-    // if (!board.moveCurBlockDown()) {
-    //   // TODO Game over
-    //   currentGameOver();
-    //   return;
-    // }
   }
   curContext.clearRect(0, 0, curContext.canvas.width, curContext.canvas.height);
   board.drawGame();
