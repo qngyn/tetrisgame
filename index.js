@@ -54,7 +54,6 @@ const animate = async (now = 0) => {
     const movedCurBlockDown = await board.moveCurBlockDown();
     timer.start = now;
     if (!movedCurBlockDown) {
-      // TODO Game over
       currentGameOver();
       return;
     }
