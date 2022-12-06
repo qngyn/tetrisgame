@@ -2,13 +2,17 @@ export default class User {
   score;
   level;
   lines;
+  // highest score
+  hscore;
 
   constructor() {
     this.resetUserScoreData();
   }
 
   resetUserScoreData = () => {
-    ['score', 'level', 'lines'].forEach((key) => this.setUserScoreData(key, 0));
+    ['score', 'level', 'lines', 'hscore'].forEach((key) =>
+      this.setUserScoreData(key, 0)
+    );
   };
 
   setUserScoreData = (key, value) => {

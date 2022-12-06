@@ -39,7 +39,12 @@ const startGame = () => {
   timer.start = performance.now();
   board.resetBoard();
   board.drawGame();
+  let hscore;
+  if (board.user.score > board.user.hscore) {
+    hscore = board.user.score;
+  }
   board.user.resetUserScoreData();
+  hscore && board.user.setUserScoreData('hscore', hscore);
   animate();
 };
 
