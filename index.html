@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Tetris Game</title>
+    <meta property="og:title" content="Simple Tetris Game in JavaScript" />
+    <meta name="description" content="Simple Tetris Game in JavaScript." />
+    <meta name="author" content="Quynh Nguyen" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/bb48943ce9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="grid">
+      <canvas id="board" class="game-board"></canvas>
+      <div class="right-column">
+        <div>
+          <h1>TETRIS</h1>
+          <p>Score: <span id="score">0</span></p>
+          <p>Lines: <span id="lines">0</span></p>
+          <p>Level: <span id="level">0</span></p>
+
+          <canvas id="next" class="next"></canvas>
+        </div>
+        <div class="button-container">
+          <button id="instr-button" class="instr-button">Instruction</button>
+          <button id="start-button" class="start-button">Play</button>
+        </div>
+      </div>
+      <div id="modal-overlay">
+        <div id="modal">
+          <div class="modal-header">
+            <h2>Instructions</h2>
+          </div>
+
+          <div class="modal-content">
+            <!-- <p>Modal Content</p> -->
+            <i class="fa-solid fa-square-left" color="black"></i>
+            <p>
+              Press Left Arrow Key
+              <span><i class="fa-solid fa-circle-chevron-left"></i></span> to
+              Move the Current Tetris Block Left
+            </p>
+            <p>
+              Press Right Arrow Key
+              <span><i class="fa-solid fa-circle-chevron-right"></i></span> to
+              Move the Current Tetris Block Right
+            </p>
+            <p>
+              Press Up Arrow Key
+              <span><i class="fa-solid fa-circle-chevron-up"></i></span> to
+              Rotate the Current Tetris Block
+            </p>
+            <p>
+              Press Down Arrow Key
+              <span><i class="fa-solid fa-circle-chevron-right"></i></span> to
+              Soft-Drop the Current Tetris Block
+            </p>
+            <p>
+              Press Space
+              <span><i class="fa-solid fa-keyboard"></i></span> to Hard-Drop the
+              Current Tetris Block
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button id="close-modal" class="close-modal-btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="constants.js"></script>
+    <script type="text/javascript" src="board.js"></script>
+    <script type="text/javascript" src="piece.js"></script>
+    <script type="text/javascript" src="main.js"></script> -->
+  </body>
+</html>

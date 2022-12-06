@@ -1,0 +1,70 @@
+* {
+  font-family: 'Audiowide';
+  font-weight: 900;
+}
+
+p {
+  font-size: 16;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 320px 200px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-board {
+  border: solid 2px;
+}
+
+.start-button {
+  background-color: #efcfd4;
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.instr-button {
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.button-container {
+  display: grid;
+}
+
+.close-modal-btn {
+  font-size: 18px;
+}
+
+#modal-overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-overlay #modal {
+  max-width: 650px;
+  width: 100%;
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#modal-overlay #modal .modal-footer {
+  margin-top: auto;
+}
